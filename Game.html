@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <style>
+        body{
+            color: whitesmoke;
+            text-align: center;
+            background: darkcyan;
+        }
+        #name{
+            margin-top: 15%;
+            border-radius: 50px;
+            padding: 50px 50px 50px 50px;
+            background: blue;
+            display: inline-block;
+        }
+        input{
+            color: whitesmoke;
+            border-radius: 10px;
+            padding: 4px 4px 4px 4px;
+            background: darkcyan;
+            border: none;
+        }
+        button{
+            color: whitesmoke;
+            background: darkcyan;
+            width: 50%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="name">
+    <label>Palyer 1
+        <input style="margin-right: -3px" id="p1" type="text" placeholder="Palyer 1 Name" maxlength="6"/>
+    </label><br>
+    <label>Player 2
+        <input id="p2" type="text" placeholder="Palyer 2 Name" maxlength="6"/>
+    </label><hr>
+    <button onclick="nameAdd()">Play Game</button><br>
+    <button onclick="location.assign('record.html')">Score</button>
+</div>
+<script>
+    var input = document.getElementsByTagName('input');
+
+    function nameAdd(){
+        var obj = {p1:input[0].value,p2:input[1].value};
+        if(obj.p1 !== "" && obj.p2 !== "" && obj.p1 !== obj.p2){
+            localStorage.setItem("obj",JSON.stringify(obj));
+            location.assign("Demo4.html");
+        }else{
+            alert("Type Your Correct Name!")
+        }
+        input[0].value = "";
+        input[1].value = "";
+    }
+
+</script>
+</body>
+</html>

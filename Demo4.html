@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="big">
+    <div id="status">
+    <ul>
+        <li>Total</li>
+        <li>P1 0</li>
+        <li>P2 0</li>
+    </ul><hr><hr>
+</div>
+<div id="btn"><div id="ply">P1</div><hr><hr><br>
+    <button disabled="disabled" onclick="up()" style="margin-left: 5px;border-radius: 50px 50px 0px 0px">U</button><br>
+    <button disabled="disabled" onclick="left()" style="border-radius: 50px 0px 0px 50px;margin-left: 5px">L</button>
+    <button disabled="disabled" onclick="right()" style="border-radius: 0px 50px 50px 0px;margin-left: 31px">R</button><br>
+    <button disabled="disabled" onclick="down()" style="margin-left: 5px;border-radius: 0px 0px 50px 50px">D</button><hr>
+</div>
+<div id="div1">
+    <table border="1" cellSpacing="0"></table>
+</div>
+</div>
+<div id="c"></div>
+
+
+<script src="gameApp.js"></script>
+</body>
+</html>

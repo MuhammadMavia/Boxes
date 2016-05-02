@@ -1,0 +1,83 @@
+body{
+    text-align: center;
+    background: darkcyan;
+    text-transform: capitalize;
+}
+#btn{
+    border-radius: 20%;
+    text-align: center;
+    float: right;
+    padding: 2% 2% 2% 2%;
+    margin: 220px 18px 10px 20px;
+    height: 200px;
+    width: 14.9%;
+}
+#status{
+    border: solid whitesmoke 5px;
+    text-align: left;
+    font-size: 150%;
+    color: whitesmoke;
+    border-radius: 20%;
+    padding-top: 2%;
+    margin: 40px 50px 0px -208px;
+    float: right;
+    height: 500px;
+    width: 19%;
+    background: darkblue;
+}
+#ply{
+    display: inline-block;
+    padding-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 50%;
+    margin: 0px 0px 20px -0px;
+    height: 40px;
+    width: 60px;
+    background: blue;
+}
+button{
+    border: none;
+    height: 35px;
+    width: 35px;
+}
+button:hover{
+    color: whitesmoke;
+    background: #a1addc;
+}
+button:disabled{
+    background: gray;
+}
+#div1{
+    padding: 33px 50px 50px 20px;
+    display: block;
+    background: cadetblue;
+    height: 100%;
+    width: 93.7%;
+}
+table{
+    background: darkgray;
+}
+td:hover{
+    background: #902f05;
+}
+td{
+    padding-top: 0%;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 2px;
+    height: 40px;
+    width: 40px;
+
+}
+#c{
+    color: whitesmoke;
+    font-size: 200%;
+    display: none;
+    border-radius: 20%;
+    margin-top: 15%;
+    height: 225px;
+    width: 35%;
+    background: blue;
+    padding-top: 5%;
+}

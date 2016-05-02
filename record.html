@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module("game",[])
+                .controller("func",function($scope){
+                    $scope.list = JSON.parse(localStorage.getItem("reco"))
+                })
+    </script>
+    <style>
+        body{
+            color: whitesmoke;
+            background: darkcyan;
+            text-align: center;
+        }
+        h1{
+            display: inline;
+            border-radius: 20%;
+            background: blue;
+            padding: 20px 20px 20px 20px;
+            font-size: 300%;
+        }
+        ul{
+            list-style: none;
+        }
+        tr{
+            background: blue;
+        }
+        table{
+            width: 95%;
+        }
+        td{
+            text-transform: capitalize;
+            border-radius: 20%;
+            height: 50px;
+            width: 20%;
+        }
+    </style>
+</head>
+<body ng-app="game">
+<h1>Score</h1><hr><hr>
+<div ng-controller="func">
+    <ul>
+        <li>
+            <table>
+                <tr>
+                    <td><h2>P1</h2></td>
+                    <td><h2>Box</h2></td>
+                    <td><h2>P2</h2></td>
+                    <td><h2>Box</h2></td>
+                    <td><h2>Margin</h2></td>
+                </tr>
+            </table>
+        </li>
+        <li ng-repeat="r in list">
+            <table>
+                <tr>
+                    <td>{{r.p1Name}}</td>
+                    <td>{{r.p1Box}}</td>
+                    <td>{{r.p2Name}}</td>
+                    <td>{{r.p2Box}}</td>
+                    <td>{{r.mar}}</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
